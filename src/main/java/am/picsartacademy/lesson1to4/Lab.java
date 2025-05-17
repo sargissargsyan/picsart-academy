@@ -1,4 +1,4 @@
-package am.picsartacademy;
+package am.picsartacademy.lesson1to4;
 
 public class Lab {
 

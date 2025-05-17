@@ -1,4 +1,4 @@
-package am.picsartacademy.lesson2;
+package am.picsartacademy.lesson1to4;
 
 public class WhileDoWhile {
     public static void main(String[] args) {

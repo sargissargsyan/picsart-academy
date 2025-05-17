@@ -1,4 +1,4 @@
-package am.picsartacademy.lesson2;
+package am.picsartacademy.lesson1to4;
 
 import java.util.Scanner;
 
