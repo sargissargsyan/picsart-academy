@@ -43,4 +43,16 @@ public class Employee extends Human {
     public void speck() {
         System.out.println("I am Specking Employee!");
     }
+
+    public void speck(String name) {
+        System.out.println(name + " is Specking Employee!");
+    }
+
+    public String speck(String title, int salary) {
+        return title + " " + salary;
+    }
+
+    public String speck(int salary, String title) {
+        return title + " " + salary;
+    }
 }
