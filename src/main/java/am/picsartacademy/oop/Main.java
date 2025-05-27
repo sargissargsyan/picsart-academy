@@ -1,18 +1,54 @@
 package am.picsartacademy.oop;
 
+import am.picsartacademy.oop.exepations.AgeException;
+import am.picsartacademy.oop.exepations.InvalidNameException;
 import am.picsartacademy.oop.models.Employee;
 import am.picsartacademy.oop.models.Human;
 import am.picsartacademy.oop.models.Student;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Human human = new Employee();
-        Human human2 = new Student();
+        try {
+        int n = 6/0;}
+        catch (ArithmeticException e) {
+            System.out.println("you cannot divide by zero");
 
-        Employee employee = (Employee) human2;
-        employee.speck("tete");
-        human.speck();
-        human2.speck();
+        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("what is your name?");
+        String firstName = scanner.nextLine();
 
+        Human human1 = new Human();
+        try {
+            human1.setFirstName(firstName);
+        }
+
+        catch (InvalidNameException e) {
+            System.out.println(e.toString());
+            System.out.println("Setting default name John");
+            human1.setFirstName("John");
+        }
+
+        System.out.println("what is your age?");
+        int age = 0;
+        try {
+            age = scanner.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("The age should be an integer");
+        }
+        try {
+            human1.setAge(age);
+            System.out.println(human1.age);
+        } catch (AgeException e) {
+            System.out.println(e.toString());
+            System.out.println("Defaulting to age 20");
+            human1.setAge(20);
+        } finally {
+            System.out.println("Finally the age is " + human1.age);
+        }
+        System.out.println(human1.age);
     }
 }

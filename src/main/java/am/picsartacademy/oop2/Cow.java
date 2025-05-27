@@ -1,6 +1,7 @@
 package am.picsartacademy.oop2;
 
 public class Cow extends Animal {
+    static String currentYear;
 
     public Cow(String name) {
         super(name);

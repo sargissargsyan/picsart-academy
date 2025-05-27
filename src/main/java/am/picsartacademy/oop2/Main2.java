@@ -2,6 +2,9 @@ package am.picsartacademy.oop2;
 
 public class Main2 {
     public static void main(String[] args) {
+        System.out.println(Cow.currentYear);
+
+
         Dog doc1 = new Dog();
         Dog doc2 = new Dog("Labrador");
         Dog doc3 = new Dog("Gampr", 4);
