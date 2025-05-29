@@ -1,10 +1,4 @@
-package am.picsartacademy.oop;
-
-import am.picsartacademy.oop.exepations.AgeException;
-import am.picsartacademy.oop.exepations.InvalidNameException;
-import am.picsartacademy.oop.models.Employee;
-import am.picsartacademy.oop.models.Human;
-import am.picsartacademy.oop.models.Student;
+package am.picsartacademy;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
